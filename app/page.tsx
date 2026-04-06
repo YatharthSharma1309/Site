@@ -1,6 +1,7 @@
 import { AboutSection } from "@/components/AboutSection";
 import { CertificationsSection } from "@/components/CertificationsSection";
 import { ContactSection } from "@/components/ContactSection";
+import { DigitalTwinSection } from "@/components/DigitalTwinSection";
 import { Hero } from "@/components/Hero";
 import { JourneySection } from "@/components/JourneySection";
 import { Navigation } from "@/components/Navigation";
@@ -27,6 +28,7 @@ export default function Home() {
         <JourneySection />
         <CertificationsSection />
         <PortfolioSection />
+        <DigitalTwinSection />
         <ContactSection />
       </main>
       <SiteFooter />

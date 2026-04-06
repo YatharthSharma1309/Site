@@ -34,6 +34,16 @@ export const skillGroups = {
   ],
 } as const;
 
+export const linkedInProfileSnapshot = {
+  headline:
+    "Software Engineer focused on front-end and UI craft, while intentionally growing backend fluency.",
+  about:
+    "Strong work ethic, adaptability, and interpersonal collaboration. Comfortable working independently, learning quickly, and shipping polished user-facing experiences.",
+  interests: ["Web Development", "UI Engineering", "React"],
+  currentlyLearning: ["APIs and backend fundamentals", "SQL", "System-level product thinking"],
+  achievements: ["Pull Shark x2", "Quickdraw", "YOLO"],
+} as const;
+
 export type JourneyItem = {
   title: string;
   org: string;
