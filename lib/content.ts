@@ -1,8 +1,8 @@
 export const site = {
   name: "Yatharth Sharma",
-  role: "Software Engineer · Front-End & UI",
+  role: "Software Engineer · Full-Stack & UI",
   tagline:
-    "Building precise, engaging web experiences — from design systems to production React. Behind the UI, I am deliberately building fluency with APIs, SQL, and how data moves through a stack — still front-end first, but less blind to the server.",
+    "Building precise, engaging web experiences — from design systems to production React. I ship across the full stack: REST API routes, LLM integrations, and backend services alongside polished, accessible UIs.",
   location: "Faridabad, Haryana, India",
   email: "yatharthsharma1309@gmail.com",
   linkedin: "https://www.linkedin.com/in/yatharth-sharma-32a1a1200",
@@ -10,37 +10,39 @@ export const site = {
 };
 
 export const aboutParagraphs = [
-  "I am a web and UI developer focused on exceptional digital experiences: performance, accessibility, and craft at every layer.",
-  "My day-to-day stack is HTML5, CSS3, JavaScript (ES6+), React, and TypeScript. I ship responsive, fast applications that feel seamless across devices — and I am intentionally going deeper on the other side of the wire: request/response contracts, validation, auth flows, and how data is stored and queried, so I can collaborate with backend engineers with fewer hand-offs and eventually own more of the vertical slice.",
-  "I translate Figma into code with design systems, Tailwind CSS, Styled Components, and motion (e.g. Framer Motion). I care about user-centered design, clear state management (Redux, Context), and interfaces that are beautiful, intuitive, and inclusive.",
+  "I am a full-stack-leaning software engineer focused on shipping exceptional digital experiences: performance, accessibility, and craft at every layer.",
+  "My day-to-day stack is React, TypeScript, Next.js (App Router + API Routes), and Node.js. I build responsive, fast UIs and the backend services that power them — REST endpoints, request validation, LLM integrations — so I own more of the vertical slice and need fewer hand-offs between layers.",
+  "I translate Figma into code with Tailwind CSS, Styled Components, and Framer Motion. I care about user-centered design, clean state management (Redux, Context), and interfaces that are beautiful, intuitive, and inclusive.",
 ];
 
 export const skillGroups = {
   core: [
     "React & TypeScript",
+    "Next.js (App Router & API Routes)",
+    "Node.js & REST API development",
+    "LLM / OpenRouter API integration",
     "HTML5 / CSS3 / ES6+",
-    "UI & UX design",
     "Tailwind · Styled Components",
-    "Design systems · Figma to code",
     "Redux · Context API",
     "Framer Motion",
+    "Design systems · Figma to code",
   ],
-  /** Honest “in progress” — no inflated titles */
   deepening: [
-    "HTTP APIs & REST",
-    "Node.js & server-side basics",
     "SQL & relational modeling",
     "Auth patterns (sessions, JWT)",
+    "Streaming APIs & real-time patterns",
+    "Infrastructure & deployment (Vercel, CI/CD)",
+    "UI & UX design",
   ],
 } as const;
 
 export const linkedInProfileSnapshot = {
   headline:
-    "Software Engineer focused on front-end and UI craft, while intentionally growing backend fluency.",
+    "Software Engineer — full-stack-leaning, shipping React/TypeScript UIs and backend REST APIs in production.",
   about:
-    "Strong work ethic, adaptability, and interpersonal collaboration. Comfortable working independently, learning quickly, and shipping polished user-facing experiences.",
-  interests: ["Web Development", "UI Engineering", "React"],
-  currentlyLearning: ["APIs and backend fundamentals", "SQL", "System-level product thinking"],
+    "Strong work ethic, adaptability, and interpersonal collaboration. Comfortable working independently across the stack — from UI components to API endpoints — learning quickly, and delivering end-to-end features.",
+  interests: ["Web Development", "Full-Stack Engineering", "AI & LLM Integration", "React"],
+  currentlyLearning: ["SQL & relational modeling", "Auth patterns (JWT, sessions)", "Streaming APIs & real-time patterns", "Infrastructure & deployment"],
   achievements: ["Pull Shark x2", "Quickdraw", "YOLO"],
 } as const;
 
@@ -61,7 +63,9 @@ export const journey: JourneyItem[] = [
     location: "Gurugram, Haryana",
     current: true,
     description: [
-      "Shipping front-end features and polished UI in a fast-moving product environment.",
+      "Shipping production front-end features — React, TypeScript, component systems — in a fast-moving AI product environment.",
+      "Contributing to backend API development: building and maintaining REST endpoints, integrating third-party and LLM services.",
+      "Owning full-stack feature slices end-to-end, from UI through API contracts to data layer.",
     ],
   },
   {
@@ -120,21 +124,23 @@ export type PortfolioLink = {
   title: string;
   description: string;
   href: string;
-  status: "Coming soon" | "Add URL" | "Profile";
+  status: "Coming soon" | "Add URL" | "Profile" | "Live";
   external?: boolean;
 };
 
 export const portfolioLinks: PortfolioLink[] = [
   {
+    title: "Personal Portfolio & AI Digital Twin",
+    description:
+      "Full-stack Next.js portfolio site featuring an AI-powered chat interface (Digital Twin) that answers as me — built with TypeScript, Tailwind CSS, Framer Motion, and OpenRouter LLM API integration via server-side API routes.",
+    href: site.github,
+    status: "Live" as const,
+    external: true,
+  },
+  {
     title: "Case studies",
     description:
       "Deep dives into product work, metrics, and technical decisions.",
-    href: "#",
-    status: "Coming soon" as const,
-  },
-  {
-    title: "Labs & experiments",
-    description: "Interactive demos, UI patterns, and prototypes.",
     href: "#",
     status: "Coming soon" as const,
   },

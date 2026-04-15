@@ -10,6 +10,7 @@ const links = [
   { href: "#portfolio", label: "Portfolio" },
   { href: "#digital-twin", label: "AI Twin" },
   { href: "#contact", label: "Contact" },
+  { href: "/resume", label: "Resume" },
 ];
 
 export function Navigation() {
